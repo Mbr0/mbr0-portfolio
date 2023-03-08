@@ -1,4 +1,4 @@
-# React JS Resume Website Template
+# React Website Portfolio
 
 ![Website Portfolio](resume-screenshot.jpg?raw=true 'Portfolio Matthieu Brousse')
 
