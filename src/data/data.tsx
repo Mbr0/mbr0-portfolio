@@ -248,7 +248,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: '2023 - Present',
+    date: 'September 2022 - Present',
     location: 'Online',
     title: 'AI & Software Engineer',
     content: <p>I'm learning AI and Fullstack development.</p>,
