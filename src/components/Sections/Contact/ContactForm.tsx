@@ -1,4 +1,7 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
+import React, { FC, memo, useCallback, useMemo, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+emailjs.init('cNRBGhv5rCFpIP-6_');
 
 interface FormData {
   name: string;
@@ -17,6 +20,7 @@ const ContactForm: FC = memo(() => {
   );
 
   const [data, setData] = useState<FormData>(defaultData);
+  const formRef = useRef<HTMLFormElement>(null); // Create a useRef hook to get a reference to the form element
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
@@ -32,9 +36,19 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
+
+      try {
+        await emailjs.sendForm(
+          'service_bte37n6',
+          'template_j1ltxaf',
+          formRef.current, // Pass the formRef to the sendForm method
+          process.env.REACT_APP_EMAILJS_USER_ID
+        );
+        console.log('Message sent successfully!');
+      } catch (error) {
+        console.log('Error sending message:', error);
+      }
+
       console.log('Data to send: ', data);
     },
     [data],
@@ -44,7 +58,7 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-300 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-emerald-700 rounded-md placeholder:text-neutral-600 placeholder:text-sm text-neutral-600 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form ref={formRef} className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
@@ -74,5 +88,5 @@ const ContactForm: FC = memo(() => {
   );
 });
 
-ContactForm.displayName = 'ContactForm';
 export default ContactForm;
+
