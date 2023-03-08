@@ -14,9 +14,9 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import portfolioKleineheld from '../images/portfolio/portfolio-kleineheld.png';
-import porfolioStartverbouwen from '../images/portfolio/portfolio-startverbouwen.png';
 import porfolioPlantenow from '../images/portfolio/portfolio-plantenow.png';
 import porfolioSimplyjardin from '../images/portfolio/portfolio-simplyjardin.png';
+import porfolioStartverbouwen from '../images/portfolio/portfolio-startverbouwen.png';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -62,13 +62,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">SEO Specialist</strong>, currently working
-        as a <strong className="text-stone-100">Freelance</strong>. I'm also learning and developing 
-        side projects to become <strong className="text-stone-100">Full Stack Software Engineer</strong>.
+        I'm a <strong className="text-stone-100">SEO Specialist</strong>, currently working as a{' '}
+        <strong className="text-stone-100">Freelance</strong>. I'm also learning and developing side projects to become{' '}
+        <strong className="text-stone-100">Full Stack Software Engineer</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me traveling in <strong className="text-stone-100">Iceland</strong>,
-        playing <strong className="text-stone-100">squash</strong>, or playing with{' '}
+        In my free time time, you can catch me traveling in <strong className="text-stone-100">Iceland</strong>, playing{' '}
+        <strong className="text-stone-100">squash</strong>, or playing with{' '}
         <strong className="text-stone-100">my cat</strong>.
       </p>
     </>
@@ -188,7 +188,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'On-page',
         level: 9,
-      }, 
+      },
       {
         name: 'Off-page',
         level: 9,
@@ -257,18 +257,23 @@ export const education: TimelineItem[] = [
     date: '2021',
     location: 'Online',
     title: 'Courses Expert SEO',
-    content: <p>Via SEMRUSH / GOOGLE / COURSERA, I learned a lot about SEO.
-      I learned how to do keyword research, how to optimize a website, globally 
-      how to rank with your website.
-    </p>,
+    content: (
+      <p>
+        Via SEMRUSH / GOOGLE / COURSERA, I learned a lot about SEO. I learned how to do keyword research, how to
+        optimize a website, globally how to rank with your website.
+      </p>
+    ),
   },
   {
     date: 'June 2013',
     location: 'University of Reims',
     title: 'DUT Civil Engineering',
-    content: <p>I learned a lot about managing large projects 
-      independently. Dealing with pressure and finding solutions 
-      for complex problems.</p>,
+    content: (
+      <p>
+        I learned a lot about managing large projects independently. Dealing with pressure and finding solutions for
+        complex problems.
+      </p>
+    ),
   },
 ];
 
@@ -279,11 +284,9 @@ export const experience: TimelineItem[] = [
     title: 'Freelance Webmaster',
     content: (
       <p>
-        As a freelancer, I have learned a lot, 
-        both in terms of skills and personnel. 
-        Learning to work on my own, being rigorous 
-        and efficient. But also learning multiple new 
-        concepts such as SEO, web development and artificial intelligence.
+        As a freelancer, I have learned a lot, both in terms of skills and personnel. Learning to work on my own, being
+        rigorous and efficient. But also learning multiple new concepts such as SEO, web development and artificial
+        intelligence.
       </p>
     ),
   },
@@ -291,11 +294,7 @@ export const experience: TimelineItem[] = [
     date: 'December 2014 - June 2021',
     location: 'Norauto - France',
     title: 'Autopart Seller',
-    content: (
-      <p>
-        Selling products, managing a team.
-      </p>
-    ),
+    content: <p>Selling products, managing a team.</p>,
   },
 ];
 

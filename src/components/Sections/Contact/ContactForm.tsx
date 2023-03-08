@@ -1,5 +1,5 @@
-import React, { FC, memo, useCallback, useMemo, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import {FC, memo, useCallback, useMemo, useRef, useState} from 'react';
 
 emailjs.init('cNRBGhv5rCFpIP-6_');
 
@@ -44,7 +44,7 @@ const ContactForm: FC = memo(() => {
           'service_bte37n6',
           'template_j1ltxaf',
           formRef.current, // Pass the formRef to the sendForm method
-          process.env.REACT_APP_EMAILJS_USER_ID
+          process.env.REACT_APP_EMAILJS_USER_ID,
         );
         console.log('Message sent successfully!');
       } catch (error) {
@@ -60,7 +60,7 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-300 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-emerald-700 rounded-md placeholder:text-neutral-600 placeholder:text-sm text-neutral-600 text-sm';
 
   return (
-    <form ref={formRef} className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage} ref={formRef}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
