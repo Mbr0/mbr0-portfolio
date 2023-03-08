@@ -36,7 +36,9 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-
+      if (!formRef.current) {
+        return;
+      }
       try {
         await emailjs.sendForm(
           'service_bte37n6',
@@ -89,4 +91,3 @@ const ContactForm: FC = memo(() => {
 });
 
 export default ContactForm;
-
