@@ -68,8 +68,8 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me traveling in <strong className="text-stone-100">Iceland</strong>, playing{' '}
-        <strong className="text-stone-100">squash</strong>, or playing with{' '}
-        <strong className="text-stone-100">my cat</strong>.
+        <strong className="text-stone-100">squash</strong>, or cooking some{' '}
+        <strong className="text-stone-100">nice food.</strong>.
       </p>
     </>
   ),
