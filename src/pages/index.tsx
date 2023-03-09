@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
+import { inject } from '@vercel/analytics';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
@@ -10,6 +11,7 @@ import Portfolio from '../components/Sections/Portfolio';
 import Resume from '../components/Sections/Resume';
 import {homePageMeta} from '../data/data';
 
+inject();
 // eslint-disable-next-line react-memo/require-memo
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
 
