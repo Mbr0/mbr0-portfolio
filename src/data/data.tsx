@@ -251,7 +251,7 @@ export const education: TimelineItem[] = [
     date: 'September 2022 - Present',
     location: 'Online',
     title: 'AI & Software Engineer',
-    content: <p>I'm learning AI and Fullstack development.</p>,
+    content: <p>I'm currently learning both AI and Fullstack development.</p>,
   },
   {
     date: '2021',
@@ -259,8 +259,8 @@ export const education: TimelineItem[] = [
     title: 'Courses Expert SEO',
     content: (
       <p>
-        Via SEMRUSH / GOOGLE / COURSERA, I learned a lot about SEO. I learned how to do keyword research, how to
-        optimize a website, globally how to rank with your website.
+        Through SEMRUSH, GOOGLE, and COURSERA, I gained extensive knowledge in SEO, 
+        including keyword research, website optimization, and how to improve website ranking.
       </p>
     ),
   },
@@ -270,8 +270,8 @@ export const education: TimelineItem[] = [
     title: 'DUT Civil Engineering',
     content: (
       <p>
-        I learned a lot about managing large projects independently. Dealing with pressure and finding solutions for
-        complex problems.
+        I acquired valuable experience in managing large projects independently, 
+        learning to work under pressure, and developing solutions for complex problems.
       </p>
     ),
   },
@@ -284,9 +284,10 @@ export const experience: TimelineItem[] = [
     title: 'Freelance Webmaster',
     content: (
       <p>
-        As a freelancer, I have learned a lot, both in terms of skills and personnel. Learning to work on my own, being
-        rigorous and efficient. But also learning multiple new concepts such as SEO, web development and artificial
-        intelligence.
+        As a freelancer, I have gained valuable experience, 
+        both professionally and personally. It has taught me to be self-motivated, 
+        disciplined, and productive. Additionally, I have expanded my knowledge 
+        in various areas such as SEO, web development, and artificial intelligence.
       </p>
     ),
   },
