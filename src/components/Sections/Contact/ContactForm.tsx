@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import {FC, memo, useCallback, useMemo, useRef, useState} from 'react';
+import { FC, memo, useCallback, useMemo, useRef, useState } from 'react';
 
 emailjs.init('cNRBGhv5rCFpIP-6_');
 
@@ -16,21 +16,22 @@ const ContactForm: FC = memo(() => {
       email: '',
       message: '',
     }),
-    [],
+    []
   );
 
   const [data, setData] = useState<FormData>(defaultData);
+  const [messageSent, setMessageSent] = useState(false);
   const formRef = useRef<HTMLFormElement>(null); // Create a useRef hook to get a reference to the form element
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const {name, value} = event.target;
+      const { name, value } = event.target;
 
-      const fieldData: Partial<FormData> = {[name]: value};
+      const fieldData: Partial<FormData> = { [name]: value };
 
-      setData({...data, ...fieldData});
+      setData({ ...data, ...fieldData });
     },
-    [data],
+    [data]
   );
 
   const handleSendMessage = useCallback(
@@ -44,16 +45,17 @@ const ContactForm: FC = memo(() => {
           'service_bte37n6',
           'template_j1ltxaf',
           formRef.current, // Pass the formRef to the sendForm method
-          process.env.REACT_APP_EMAILJS_USER_ID,
+          process.env.REACT_APP_EMAILJS_USER_ID
         );
         console.log('Message sent successfully!');
+        setMessageSent(true); // Set the messageSent state to true
       } catch (error) {
         console.log('Error sending message:', error);
       }
 
       console.log('Data to send: ', data);
     },
-    [data],
+    [data]
   );
 
   const inputClasses =
@@ -86,6 +88,7 @@ const ContactForm: FC = memo(() => {
         type="submit">
         Send Message
       </button>
+      {messageSent && <p>Success, your mail has been sent!</p>}
     </form>
   );
 });
