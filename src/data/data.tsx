@@ -17,6 +17,7 @@ import portfolioKleineheld from '../images/portfolio/portfolio-kleineheld.png';
 import porfolioPlantenow from '../images/portfolio/portfolio-plantenow.png';
 import porfolioSimplyjardin from '../images/portfolio/portfolio-simplyjardin.png';
 import porfolioStartverbouwen from '../images/portfolio/portfolio-startverbouwen.png';
+import portfolioStepback from '../images/portfolio/portfolio-stepback.png';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -217,6 +218,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'StepbackShop',
+    description: 'E-shop for the Stepback brand.',
+    url: 'https://stepbackshop.com',
+    image: portfolioStepback,
+  },
   {
     title: 'Kleineheld',
     description: 'Create your child’s own storybook with AI.',
