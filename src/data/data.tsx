@@ -226,6 +226,12 @@ export const portfolioItems: PortfolioItem[] = [
     image: portfolioStepback,
   },
   {
+    title: 'Plantenow.fr',
+    description: 'French blog and affiliate website about Plants',
+    url: 'https://plantenow.fr',
+    image: porfolioPlantenow,
+  },
+  {
     title: 'ROGER Energy',
     description: 'Company website for ROGER Energy, specialist in hydrogen energy.',
     url: 'https://roger.energy',
@@ -238,22 +244,16 @@ export const portfolioItems: PortfolioItem[] = [
     image: portfolioKleineheld,
   },
   {
-    title: 'Startverbouwen.nl',
-    description: 'Start to renovate your home with the power of AI.',
-    url: 'https://startverbouwen.nl',
-    image: porfolioStartverbouwen,
-  },
-  {
-    title: 'Plantenow.fr',
-    description: 'French blog and affiliate website about Plants',
-    url: 'https://plantenow.fr',
-    image: porfolioPlantenow,
-  },
-  {
     title: 'Simplyjardin.fr',
     description: 'French blog and affiliate website about Garden tools.',
     url: 'https://simplyjardin.fr',
     image: porfolioSimplyjardin,
+  },
+  {
+    title: 'Startverbouwen.nl',
+    description: 'Start to renovate your home with the power of AI. (in development)',
+    url: 'https://startverbouwen.nl',
+    image: porfolioStartverbouwen,
   },
 ];
 
