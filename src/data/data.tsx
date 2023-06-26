@@ -13,11 +13,12 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import portfolioKleineheld from '../images/portfolio/portfolio-kleineheld.png';
-import porfolioPlantenow from '../images/portfolio/portfolio-plantenow.png';
-import porfolioSimplyjardin from '../images/portfolio/portfolio-simplyjardin.png';
-import porfolioStartverbouwen from '../images/portfolio/portfolio-startverbouwen.png';
-import portfolioStepback from '../images/portfolio/portfolio-stepback.png';
+import portfolioKleineheld from '../images/portfolio/portfolio-kleineheld.webp';
+import porfolioPlantenow from '../images/portfolio/portfolio-plantenow.webp';
+import portfolioRogerEnergy from '../images/portfolio/portfolio-roger-energy.webp';
+import porfolioSimplyjardin from '../images/portfolio/portfolio-simplyjardin.webp';
+import porfolioStartverbouwen from '../images/portfolio/portfolio-startverbouwen.webp';
+import portfolioStepback from '../images/portfolio/portfolio-stepback.webp';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -223,6 +224,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'E-shop for the Stepback brand.',
     url: 'https://stepbackshop.com',
     image: portfolioStepback,
+  },
+  {
+    title: 'ROGER Energy',
+    description: 'Company website for ROGER Energy, specialist in hydrogen energy.',
+    url: 'https://roger.energy',
+    image: portfolioRogerEnergy,
   },
   {
     title: 'Kleineheld',
