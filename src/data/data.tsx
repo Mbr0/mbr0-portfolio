@@ -64,9 +64,9 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">SEO Specialist</strong>, currently working as a{' '}
-        <strong className="text-stone-100">Freelance</strong>. I'm also learning and developing side projects to become{' '}
-        <strong className="text-stone-100">Full Stack Software Engineer</strong>.
+        I'm a <strong className="text-stone-100">Fullstack Developer</strong>, currently working as a{' '}
+        <strong className="text-stone-100">Freelance</strong>. I'm also learning and developing side projects about{' '}
+        <strong className="text-stone-100">Artificial Intelligence</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me traveling in <strong className="text-stone-100">Iceland</strong>, playing{' '}
@@ -99,8 +99,8 @@ export const aboutData: About = {
   I'm seeking employment in a company to grow my experience. I'm eager to
   learn and develop my skills.`,
   aboutItems: [
-    {label: 'Location', text: 'France & Netherlands', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Location', text: 'Netherlands', Icon: MapIcon},
+    {label: 'Age', text: '30', Icon: CalendarIcon},
     {label: 'Nationality', text: 'French', Icon: FlagIcon},
     {label: 'Interests', text: 'Formula 1, High Tech, Traveling & Hiking ', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Reims', Icon: AcademicCapIcon},
@@ -142,11 +142,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'JavaScript',
-        level: 3,
+        level: 7,
       },
       {
         name: 'React',
-        level: 2,
+        level: 7,
       },
     ],
   },
@@ -163,7 +163,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Node.js',
-        level: 2,
+        level: 7,
       },
     ],
   },
@@ -238,21 +238,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: portfolioRogerEnergy,
   },
   {
-    title: 'Kleineheld',
-    description: 'Create your child’s own storybook with AI.',
-    url: 'https://kleineheld.nl',
-    image: portfolioKleineheld,
-  },
-  {
-    title: 'Simplyjardin.fr',
-    description: 'French blog and affiliate website about Garden tools.',
-    url: 'https://simplyjardin.fr',
-    image: porfolioSimplyjardin,
-  },
-  {
-    title: 'Startverbouwen.nl',
-    description: 'Start to renovate your home with the power of AI. (in development)',
-    url: 'https://startverbouwen.nl',
+    title: 'Canopy Studio',
+    description: 'On demand AI assistant. Find applications for your field or use our general model.',
+    url: 'https://canopy-lab.vercel.app',
     image: porfolioStartverbouwen,
   },
 ];
@@ -328,7 +316,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'France & Netherlands',
+      text: 'Netherlands',
       href: 'https://www.google.ca/maps/',
     },
     {
