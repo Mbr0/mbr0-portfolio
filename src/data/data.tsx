@@ -13,9 +13,9 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
+import portfolioCanopy from '../images/portfolio/portfolio-canopystudio.jpeg';
 import porfolioPlantenow from '../images/portfolio/portfolio-plantenow.webp';
 import portfolioRogerEnergy from '../images/portfolio/portfolio-roger-energy.webp';
-import porfolioStartverbouwen from '../images/portfolio/portfolio-startverbouwen.webp';
 import portfolioStepback from '../images/portfolio/portfolio-stepback.webp';
 import profilepic from '../images/profilepic.jpg';
 import {
@@ -239,7 +239,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Canopy Studio',
     description: 'On demand AI assistant. Find applications for your field or use our general model.',
     url: 'https://canopy-lab.vercel.app',
-    image: porfolioStartverbouwen,
+    image: portfolioCanopy,
   },
 ];
 
@@ -259,8 +259,8 @@ export const education: TimelineItem[] = [
     title: 'Courses Expert SEO',
     content: (
       <p>
-        Through SEMRUSH, GOOGLE, and COURSERA, I gained extensive knowledge in SEO, 
-        including keyword research, website optimization, and how to improve website ranking.
+        Through SEMRUSH, GOOGLE, and COURSERA, I gained extensive knowledge in SEO, including keyword research, website
+        optimization, and how to improve website ranking.
       </p>
     ),
   },
@@ -270,8 +270,8 @@ export const education: TimelineItem[] = [
     title: 'DUT Civil Engineering',
     content: (
       <p>
-        I acquired valuable experience in managing large projects independently, 
-        learning to work under pressure, and developing solutions for complex problems.
+        I acquired valuable experience in managing large projects independently, learning to work under pressure, and
+        developing solutions for complex problems.
       </p>
     ),
   },
@@ -284,10 +284,9 @@ export const experience: TimelineItem[] = [
     title: 'Freelance Webmaster',
     content: (
       <p>
-        As a freelancer, I have gained valuable experience, 
-        both professionally and personally. It has taught me to be self-motivated, 
-        disciplined, and productive. Additionally, I have expanded my knowledge 
-        in various areas such as SEO, web development, and artificial intelligence.
+        As a freelancer, I have gained valuable experience, both professionally and personally. It has taught me to be
+        self-motivated, disciplined, and productive. Additionally, I have expanded my knowledge in various areas such as
+        SEO, web development, and artificial intelligence.
       </p>
     ),
   },
