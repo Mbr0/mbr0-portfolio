@@ -3,13 +3,13 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "build": "yarn compile && yarn next build",
+    "build": "bun run compile && bun run next build",
     "clean": "rm -rf build-tsc .next",
-    "compile": "yarn run -T tsc --build --verbose",
+    "compile": "bun run tsc --build --verbose",
     "dev": "next dev",
-    "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
-    "start": "yarn next start",
-    "sitemap": "yarn next-sitemap"
+    "lint": "bun run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
+    "start": "bun run next start",
+    "sitemap": "bun run next-sitemap"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
