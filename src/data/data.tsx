@@ -93,7 +93,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a professional SEO Specialist. 
+  description: `I'm a Fullstack Developer. 
   I'm seeking employment in a company to grow my experience. I'm eager to
   learn and develop my skills.`,
   aboutItems: [
