@@ -10,6 +10,10 @@
 
 ### View [the website here.](https://matthieubrousse.vercel.app/)
 
+## 🌎 How does it work?
+
+<img src="https://cdn.simpleicons.org/nextdotjs/000/fff" alt="Next" width=16> [Next.js](https://github.com/vercel/next.js) as the full-stack framework, simple as that. 
+
 ## Project Created By
 
 ### Matthieu Brousse
