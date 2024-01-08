@@ -15,9 +15,7 @@ const Hero: FC = memo(() => {
       <div className="relative flex h-screen w-screen items-center justify-center">
         <Image
           alt={`${name}-image`}
-          className="absolute z-0"
-          layout="fill"
-          objectFit="cover"
+          className="absolute z-0 fill cover"
           placeholder="blur"
           priority
           src={imageSrc}
@@ -33,7 +31,7 @@ const Hero: FC = memo(() => {
               {actions.map(({href, text, primary, Icon}) => (
                 <a
                   className={classNames(
-                    'flex gap-x-2 rounded-full border-2 bg-none py-2 px-4 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                    'flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
                     primary ? 'border-emerald-800 ring-emerald-800' : 'border-white ring-white',
                   )}
                   href={href}

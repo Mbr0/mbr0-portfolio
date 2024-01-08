@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build": "bun run compile && bun run next build",
+    "format:write": "prettier --write **/*.{css,js,json,jsx,ts,tsx}",
+    "format": "prettier **/*.{css,js,json,jsx,ts,tsx}",
     "clean": "rm -rf build-tsc .next",
     "compile": "bun run tsc --build --verbose",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "lint": "bun run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "bun run next start",
     "sitemap": "bun run next-sitemap"
@@ -20,7 +22,7 @@
     "autoprefixer": "^10.4.2",
     "classnames": "^2.3.1",
     "emailjs-com": "^3.2.0",
-    "next": "^12.1.0",
+    "next": "^14.0.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "ts-pattern": "^4.0.3",
@@ -65,5 +67,9 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

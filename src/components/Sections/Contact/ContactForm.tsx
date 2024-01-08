@@ -16,7 +16,7 @@ const ContactForm: FC = memo(() => {
       email: '',
       message: '',
     }),
-    []
+    [],
   );
 
   const [data, setData] = useState<FormData>(defaultData);
@@ -31,7 +31,7 @@ const ContactForm: FC = memo(() => {
 
       setData({...data, ...fieldData});
     },
-    [data]
+    [data],
   );
 
   const handleSendMessage = useCallback(
@@ -45,7 +45,7 @@ const ContactForm: FC = memo(() => {
           'service_bte37n6',
           'template_j1ltxaf',
           formRef.current, // Pass the formRef to the sendForm method
-          process.env.REACT_APP_EMAILJS_USER_ID
+          process.env.REACT_APP_EMAILJS_USER_ID,
         );
         console.log('Message sent successfully!');
         setMessageSent(true); // Set the messageSent state to true
@@ -55,7 +55,7 @@ const ContactForm: FC = memo(() => {
 
       console.log('Data to send: ', data);
     },
-    [data]
+    [data],
   );
 
   const inputClasses =

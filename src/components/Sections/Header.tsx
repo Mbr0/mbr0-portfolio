@@ -67,7 +67,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
       <>
         <button
           aria-label="Menu Button"
-          className="fixed top-2 right-2 z-40 rounded-md bg-emerald-800 p-2 ring-offset-gray-800/60 hover:bg-emerald-800 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-emerald-800 focus-visible:ring-offset-2 sm:hidden"
+          className="fixed right-2 top-2 z-40 rounded-md bg-emerald-800 p-2 ring-offset-gray-800/60 hover:bg-emerald-800 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-emerald-800 focus-visible:ring-offset-2 sm:hidden"
           onClick={toggleOpen}>
           <MenuAlt3Icon className="h-8 w-8 text-white" />
           <span className="sr-only">Open sidebar</span>
@@ -122,11 +122,15 @@ const NavItem: FC<{
   onClick?: () => void;
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
   return (
-    <Link href={`/#${section}`} passHref>
-      <a className={classNames(current ? activeClass : inactiveClass)} key={section} onClick={onClick}>
-        {section}
-      </a>
-    </Link>
+    <Link
+  className={classNames(current ? activeClass : inactiveClass)}
+  href={`/#${section}`}
+  key={section}
+  onClick={onClick}
+  passHref
+>
+  {section}
+</Link>
   );
 });
 
