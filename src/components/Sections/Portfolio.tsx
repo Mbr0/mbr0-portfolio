@@ -16,7 +16,7 @@ const Portfolio: FC = memo(() => {
         <h2 className="self-center pb-7 font-bold text-white sm:text-2xl md:text-3xl lg:text-4xl">
           Check out some of my work
         </h2>
-        <div className=" w-full columns-2 md:columns-2 lg:columns-2">
+        <div className="grid grid-cols-2 gap-6">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
             return (
