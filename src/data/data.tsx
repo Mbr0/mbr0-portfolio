@@ -13,7 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import portfolioCanopyStudio from '../images/portfolio/portfolio-canopystudio.webp';
+import portfolioCanopyStudio from '../images/portfolio/canopystudio.jpg.jpg';
 import porfolioPlantenow from '../images/portfolio/portfolio-plantenow.webp';
 import portfolioRogerEnergy from '../images/portfolio/portfolio-roger-energy.webp';
 import portfolioStepback from '../images/portfolio/portfolio-stepback.webp';
