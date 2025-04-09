@@ -211,6 +211,27 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
+  {
+  name: 'AI Tools & Development',
+  skills: [
+    {
+      name: 'AI Assistants',
+      level: 9,
+    },
+    {
+      name: 'Low Code Tools',
+      level: 9,
+    },
+    {
+      name: 'AI Agents',
+      level: 9,
+    },
+    {
+      name: 'Prompt Engineering',
+      level: 9,
+    }
+  ],
+},
 ];
 
 /**
