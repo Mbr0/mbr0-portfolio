@@ -250,12 +250,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://canopystudio.io',
     image: portfolioCanopyStudio,
   },
-  {
-    title: 'CanopyStudio',
-    description: 'A creative technology hub building playful, AI-powered applications and tools, blending storytelling, design, and automation.',
-    url: 'https://canopystudio.io',
-    image: portfolioCanopyStudio,
-  },
 ];
 
 /**
