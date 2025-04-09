@@ -239,27 +239,15 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'StepbackShop',
-    description: 'E-shop for the Stepback brand.',
-    url: 'https://stepbackshop.com',
-    image: portfolioStepback,
-  },
-  {
-    title: 'Plantenow.fr',
-    description: 'French blog and affiliate website about Plants',
-    url: 'https://plantenow.fr',
-    image: porfolioPlantenow,
-  },
-  {
     title: 'ROGER Energy',
     description: 'Company website for ROGER Energy, specialist in hydrogen energy.',
     url: 'https://roger.energy',
     image: portfolioRogerEnergy,
   },
   {
-    title: 'Canopy Studio',
-    description: 'On demand AI assistant. Find applications for your field or use our general model.',
-    url: 'https://canopy-lab.vercel.app',
+    title: 'CanopyStudio',
+    description: 'A creative technology hub building playful, AI-powered applications and tools, blending storytelling, design, and automation.',
+    url: 'https://canopystudio.io',
     image: portfolioCanopy,
   },
 ];
