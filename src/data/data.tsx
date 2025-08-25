@@ -98,7 +98,7 @@ export const aboutData: About = {
   learn and develop my skills.`,
   aboutItems: [
     {label: 'Location', text: 'Netherlands', Icon: MapIcon},
-    {label: 'Age', text: '30', Icon: CalendarIcon},
+    {label: 'Age', text: '31', Icon: CalendarIcon},
     {label: 'Nationality', text: 'French', Icon: FlagIcon},
     {label: 'Interests', text: 'Formula 1, High Tech, Traveling & Hiking ', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Reims', Icon: AcademicCapIcon},
